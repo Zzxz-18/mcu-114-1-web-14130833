@@ -28,7 +28,8 @@ div.main {
 
       a {
         padding: 0.5rem 0.75rem;
-        border-radius: inherit;
+        border-radius: 0.5rem;
+        text-decoration: inherit;
         display: flex;
         gap: 0.75rem;
         align-items: center;
@@ -74,6 +75,47 @@ div.main {
         &.selected {
           background-color: var(--primary-color);
           color: white;
+        }
+      }
+    }
+
+    div.books {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+      row-gap: 2.5rem;
+      column-gap: 1.5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        img {
+          border-radius: 0.5rem;
+        }
+        h4 {
+          margin: 0;
+          margin-top: 0.5rem;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: var(--header-color);
+        }
+
+        span {
+          &:first-of-type {
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: var(--gray-color-500);
+          }
+
+          &:last-of-type {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: var(--primary-color);
+          }
         }
       }
     }
