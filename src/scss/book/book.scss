@@ -4,8 +4,8 @@
 @use "./main";
 @use "./footer";
 @use "./home";
-
-html,
+@use "./about";
+s html,
 body {
   margin: 0;
   padding: 0;
