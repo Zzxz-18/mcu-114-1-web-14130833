@@ -38,8 +38,8 @@ div {
   }
 
   &.skills {
-    margin-right: 4rem;
-    width: 50%;
+    margin-right: var(--skills-margin-right);
+    width: var(--skills-width);
     display: flex;
     flex-direction: column;
     gap: 2rem;
